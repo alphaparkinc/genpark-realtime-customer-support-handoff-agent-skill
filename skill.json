@@ -1,0 +1,34 @@
+{
+  "name": "genpark-realtime-customer-support-handoff-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Intelligent tier-1 support agent with seamless human escalation protocol.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "customer-support",
+    "tier-1-agent",
+    "human-handoff",
+    "ticket-resolution"
+  ],
+  "inputs": {
+    "customer_query": {
+      "type": "string"
+    },
+    "account_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "resolution": {
+      "type": "string"
+    },
+    "escalate_to_human": {
+      "type": "boolean"
+    },
+    "agent_confidence": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
